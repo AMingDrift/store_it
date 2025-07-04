@@ -1,5 +1,7 @@
 {
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
-  }
+  },
+  "trae.tab.enableRename": false,
+  "trae.tab.enableAutoImport": false
 }
