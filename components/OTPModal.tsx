@@ -36,7 +36,8 @@ const OtpModal = ({
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     setIsLoading(true);
-
+    console.log("11111");
+    console.log({ accountId, password });
     try {
       // Call API to verify OTP
       const sessionId = await verifySecret({ accountId, password });
