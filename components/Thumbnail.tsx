@@ -1,5 +1,6 @@
 import { cn, getFileIcon } from "@/lib/utils";
-import Image from "next/image";
+// import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 
 interface Props {
@@ -30,6 +31,7 @@ const Thumbnail = ({
           imageClassName,
           isImage && "thumbnail-image"
         )}
+        unoptimized
       />
     </figure>
   );
