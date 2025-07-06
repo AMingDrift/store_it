@@ -5,10 +5,13 @@ import { getCurrentUser } from "@/lib/actions/user.actions";
 import { redirect } from "next/navigation";
 import React from "react";
 import { Toaster } from "sonner";
+import { ProxyAgent, setGlobalDispatcher } from "undici";
 
 const Layout = async ({ children }: { children: React.ReactNode }) => {
   const currentUser = await getCurrentUser();
   console.log(currentUser);
+
+  // setGlobalDispatcher(new ProxyAgent("http://127.0.0.1:7890"));
 
   if (!currentUser) return redirect("/sign-in");
   return (
