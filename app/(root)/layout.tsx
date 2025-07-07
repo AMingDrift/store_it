@@ -7,6 +7,8 @@ import React from "react";
 import { Toaster } from "sonner";
 import { ProxyAgent, setGlobalDispatcher } from "undici";
 
+export const dynamic = "force-dynamic";
+
 const Layout = async ({ children }: { children: React.ReactNode }) => {
   const currentUser = await getCurrentUser();
   console.log(currentUser);
