@@ -5,7 +5,7 @@ import { getCurrentUser } from "@/lib/actions/user.actions";
 import { redirect } from "next/navigation";
 import React from "react";
 import { Toaster } from "sonner";
-import { ProxyAgent, setGlobalDispatcher } from "undici";
+// import { ProxyAgent, setGlobalDispatcher } from "undici";
 
 export const dynamic = "force-dynamic";
 
